@@ -1,0 +1,184 @@
+Welcome to SWI-Prolog (threaded, 64 bits, version 9.2.7)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+, use ?- help(Topic). or ?- apropos(Word).
+
+?- start.
+
+Available commands are:
+start.                   -- to start the game.
+n.  s.  e.  w.   -- to go in that direction.
+take(Object).            -- to pick up an object.
+drop(Object).            -- to put down an object.
+kill.                    -- to attack an enemy.
+look.                    -- to look around you again.
+instructions.            -- to see this message again.
+halt.                    -- to end the game and quit.
+map.                     -- to see the map of the game.
+fish.                    -- to catch fish for coins.
+buy(Object).             -- to buy something from the blacksmith.
+
+You are in a dense forest. A path leads north to a village, east to a cave, and west to a river.
+Your mission is to recover the stolen ruby and defeat the dragon.
+There is a fierce dragon in the deep forest!
+
+
+true.
+
+?- map.
+Map of the game:
+      village---castle
+        |
+river---forest---cave---dungeon
+        |
+     campsite
+true.
+
+?- w.
+You are by a river. The water looks deep and dangerous, but there might be fish here. A path leads east to the forest.
+
+
+true.
+
+?- fish.
+You didn't catch anything this time.
+true.
+
+?- fish.
+You caught a fish!
+You now have 1 coins.
+true.
+
+?- fish.
+You caught a fish!
+You now have 2 coins.
+true.
+
+?- fish.
+You caught a fish!
+You now have 3 coins.
+true.
+
+?- fish.
+You didn't catch anything this time.
+true.
+
+?- fish.
+You didn't catch anything this time.
+true.
+
+?- fish.
+You caught a fish!
+You now have 4 coins.
+true.
+
+?- fish.
+You caught a fish!
+You now have 5 coins.
+true.
+
+?- e.
+You are in a dense forest. A path leads north to a village, east to a cave, and west to a river.
+Your mission is to recover the stolen ruby and defeat the dragon.
+There is a fierce dragon in the deep forest!
+
+
+true.
+
+?- n.
+You are in a small village. A path leads south to the forest and east to a castle.
+You see a blacksmith selling weapons, there is an amazing sword costing 5 coins.
+
+
+true.
+
+?- buy(sword).
+You bought a sword from the blacksmith!
+true.
+
+?- e.
+You are in front of a castle. Guards are patrolling the area. The path leads west to the village.
+
+There is a key here.
+
+true.
+
+?- take(key).
+You took the key.
+true.
+
+?- w.
+You are in a small village. A path leads south to the forest and east to a castle.
+You see a blacksmith selling weapons, there is an amazing sword costing 5 coins.
+
+
+true.
+
+?- s.
+You are in a dense forest. A path leads north to a village, east to a cave, and west to a river.
+Your mission is to recover the stolen ruby and defeat the dragon.
+There is a fierce dragon in the deep forest!
+
+
+true.
+
+?- s.
+You are at a campsite. You can find a torch here.
+
+There is a torch here.
+
+true.
+
+?- take(torch).
+You took the torch.
+true.
+
+?- n.
+You are in a dense forest. A path leads north to a village, east to a cave, and west to a river.
+Your mission is to recover the stolen ruby and defeat the dragon.
+There is a fierce dragon in the deep forest!
+
+
+true.
+
+?- e.
+You are in a dark cave. You see a shiny object on the ground. A path leads west to the forest and east to a dungeon.
+
+There is a shield here.
+
+true.
+
+?- take(shield).
+You took the shield.
+true.
+
+?- e.
+You used the key to unlock the dungeon door and entered.
+Inside, you find a precious ruby!
+You are in the dungeon. A ruby gleams in the darkness, adding to your strength for the final battle.
+
+There is a ruby here.
+
+true.
+
+?- take(ruby).
+You took the ruby.
+true.
+
+?- w.
+You are in a dark cave. You see a shiny object on the ground. A path leads west to the forest and east to a dungeon.
+
+
+true.
+
+?- w.
+You are in a dense forest. A path leads north to a village, east to a cave, and west to a river.
+Your mission is to recover the stolen ruby and defeat the dragon.
+There is a fierce dragon in the deep forest!
+
+
+true.
+
+?- kill.
+It was a tough battle...
+You defeated the dragon! Congratulations, you won the game!
+true.

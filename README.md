@@ -1,4 +1,4 @@
-# Gem and Dragon Knowledge Representation Report
+# Gem and Dragon
 
 ## 1. Game Overview
 “Gem and Dragon” is a text-based adventure game in which players take on the role of an intrepid explorer into a mysterious and dangerous forest with the goal of retrieving the gems in dungeon and defeating the dragon, as players explore the map and collect key items to win the game.

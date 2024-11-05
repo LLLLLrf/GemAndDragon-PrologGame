@@ -9,8 +9,9 @@ By using generative AI from Baidu [1], I made some design poster of the game. A 
 
 ## 3. Playing Instruction
 First, open the file with SWI-Prolog and type “start.” to start the game. The game consists of several scenes: village, castle, forest, river, cave, dungeon, campsite. Players need to unlock the map by collecting items, for instance a torch is needed to get into the cave and a key is needed to get into the dungeon. Player also need to earn coins by fishing at the river, and use the coins to buy weapons from blacksmith in the village. After obtaining sword, shield, and ruby, player can challenge to defeat the dragon and win the game.
-<img src="./assets/img2.png" alt="img2" style="zoom:40%;" /><img src="./assets/img3.png" alt="img3" style="zoom:40%;" />
-
+<div align="center">
+<img src="./assets/img2.png" alt="img2" style="width:450px;" /><img src="./assets/img3.png" alt="img3" style="width:400px;" />
+</div>
 ## 4. Knowledge Base Design
 The knowledge base in "Gem and Dragon" is constructed using dynamic predicates in Prolog, allowing for a flexible and interactive game environment. The predicates at/2, i_am_at/1, alive/1, coins/1, and has_ruby/0 manage the game state, tracking the player's location, the dragon's status, and the possession of items. I set some initial states when game started, for example “i_am_at(forest)”, “coins(0)” and “alive(dragon)”, which means the players will start the game in forest with no coins, and they need to kill the dragon to win the game.
 
